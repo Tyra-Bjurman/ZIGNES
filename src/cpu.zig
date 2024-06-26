@@ -19,3 +19,8 @@ var x_register: u8;
 var y_register: u8;
 var stack_pointer: u8;
 var cpu_program_counter: u16;
+
+// Adressing modes
+
+// Opcodes
+
