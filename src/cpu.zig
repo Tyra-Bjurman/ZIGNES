@@ -11,3 +11,4 @@ const pub ProcessorStatusFlags = packed struct {
   negative:             u1 = 0,    // Negative result
 };
 
+var cpu_status = ProcessorStatusFlags;
