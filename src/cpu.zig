@@ -24,6 +24,6 @@ var cpu_program_counter: u16;
 
 // Opcodes
 fn ADC() u8;
-
+// ...
 fn XXX() u8;
 
