@@ -21,5 +21,6 @@ var cpu_program_counter: u16;
 
 // Adressing modes
 
-// Opcodes
 
+// Opcodes
+fn ADC() u8;
