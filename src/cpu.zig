@@ -1,6 +1,6 @@
 // Central Processing Unit
 
-const pub ProcessorStatusFlag = packed struct {
+const pub ProcessorStatusFlags = packed struct {
   carry:                u1 = 0,    // Result carry bit
   zero:                 u1 = 0,    // Result is zero
   disable_interrupts:   u1 = 0,    
