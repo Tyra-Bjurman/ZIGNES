@@ -11,11 +11,11 @@ const pub ProcessorStatusFlags = packed struct {
   negative:             u1 = 0,    // Negative result
 };
 
+var cpu_status = ProcessorStatusFlags;
+
 // 6502 CPU registers
 var cpu_accumulator: u8;
 var x_register: u8;
 var y_register: u8;
 var stack_pointer: u8;
 var cpu_program_counter: u16;
-
-var cpu_status = ProcessorStatusFlags;
