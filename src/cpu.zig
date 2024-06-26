@@ -12,18 +12,22 @@ const ProcessorStatusFlags = packed struct {
 };
 
 // 6502 CPU registers
-var cpu_status = ProcessorStatusFlags;
-var cpu_accumulator: u8;
+var status = ProcessorStatusFlags;
+var accumulator: u8;
 var x_register: u8;
 var y_register: u8;
 var stack_pointer: u8;
-var cpu_program_counter: u16;
+var program_counter: u16;
 
 // Adressing modes
-
+fn ABS() u8;
 
 // Opcodes
 fn ADC() u8;
 // ...
 fn XXX() u8;
 
+// Emulator helper functions
+var address_absolute: u16 = 0x0000;
+var address_relative: u16 = 0x0000;
+var opcode: u8 = 0;
